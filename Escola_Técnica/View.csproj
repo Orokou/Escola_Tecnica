@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAE721CB-9AF4-4669-B185-DB3BF07149ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Escola_Técnica</RootNamespace>
+    <AssemblyName>Escola_Técnica</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Mysql dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="confirmarSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmarSaida.Designer.cs">
+      <DependentUpon>confirmarSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaEmailAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaEmailAluno.Designer.cs">
+      <DependentUpon>telaEmailAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaEmailProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaEmailProfessor.Designer.cs">
+      <DependentUpon>telaEmailProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaLogin.Designer.cs">
+      <DependentUpon>telaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaPrincipal.Designer.cs">
+      <DependentUpon>telaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="telaSenhaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaSenhaAluno.Designer.cs">
+      <DependentUpon>telaSenhaAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaSenhaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaSenhaProfessor.Designer.cs">
+      <DependentUpon>telaSenhaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAluno.Designer.cs">
+      <DependentUpon>UCAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAssistente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAssistente.Designer.cs">
+      <DependentUpon>UCAssistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastro.Designer.cs">
+      <DependentUpon>UCCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroAluno.Designer.cs">
+      <DependentUpon>UCCadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroCurso.Designer.cs">
+      <DependentUpon>UCCadastroCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroCurso2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroCurso2.Designer.cs">
+      <DependentUpon>UCCadastroCurso2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroDisciplina.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroDisciplina.Designer.cs">
+      <DependentUpon>UCCadastroDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroProfessor.Designer.cs">
+      <DependentUpon>UCCadastroProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroTurma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroTurma.Designer.cs">
+      <DependentUpon>UCCadastroTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditar.Designer.cs">
+      <DependentUpon>UCEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditarAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditarAluno.Designer.cs">
+      <DependentUpon>UCEditarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditarCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditarCurso.Designer.cs">
+      <DependentUpon>UCEditarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditarNotas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditarNotas.Designer.cs">
+      <DependentUpon>UCEditarNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditarProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditarProfessor.Designer.cs">
+      <DependentUpon>UCEditarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditarTurma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditarTurma.Designer.cs">
+      <DependentUpon>UCEditarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExcluir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExcluir.Designer.cs">
+      <DependentUpon>UCExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExcluirAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExcluirAluno.Designer.cs">
+      <DependentUpon>UCExcluirAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExcluirCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExcluirCurso.Designer.cs">
+      <DependentUpon>UCExcluirCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExcluirProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExcluirProfessor.Designer.cs">
+      <DependentUpon>UCExcluirProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExcluirTurma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExcluirTurma.Designer.cs">
+      <DependentUpon>UCExcluirTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLancarNotas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLancarNotas.Designer.cs">
+      <DependentUpon>UCLancarNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPesquisar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPesquisar.Designer.cs">
+      <DependentUpon>UCPesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPesquisarAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPesquisarAluno.Designer.cs">
+      <DependentUpon>UCPesquisarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPesquisarCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPesquisarCurso.Designer.cs">
+      <DependentUpon>UCPesquisarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPesquisarProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPesquisarProfessor.Designer.cs">
+      <DependentUpon>UCPesquisarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPesquisarTurma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPesquisarTurma.Designer.cs">
+      <DependentUpon>UCPesquisarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProfessor.Designer.cs">
+      <DependentUpon>UCProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCVerNotas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCVerNotas.Designer.cs">
+      <DependentUpon>UCVerNotas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="confirmarSaida.resx">
+      <DependentUpon>confirmarSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaEmailAluno.resx">
+      <DependentUpon>telaEmailAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaEmailProfessor.resx">
+      <DependentUpon>telaEmailProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaLogin.resx">
+      <DependentUpon>telaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaPrincipal.resx">
+      <DependentUpon>telaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="telaSenhaAluno.resx">
+      <DependentUpon>telaSenhaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaSenhaProfessor.resx">
+      <DependentUpon>telaSenhaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAluno.resx">
+      <DependentUpon>UCAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAssistente.resx">
+      <DependentUpon>UCAssistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastro.resx">
+      <DependentUpon>UCCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroAluno.resx">
+      <DependentUpon>UCCadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroCurso.resx">
+      <DependentUpon>UCCadastroCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroCurso2.resx">
+      <DependentUpon>UCCadastroCurso2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroDisciplina.resx">
+      <DependentUpon>UCCadastroDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroProfessor.resx">
+      <DependentUpon>UCCadastroProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroTurma.resx">
+      <DependentUpon>UCCadastroTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditar.resx">
+      <DependentUpon>UCEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditarAluno.resx">
+      <DependentUpon>UCEditarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditarCurso.resx">
+      <DependentUpon>UCEditarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditarNotas.resx">
+      <DependentUpon>UCEditarNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditarProfessor.resx">
+      <DependentUpon>UCEditarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditarTurma.resx">
+      <DependentUpon>UCEditarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExcluir.resx">
+      <DependentUpon>UCExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExcluirAluno.resx">
+      <DependentUpon>UCExcluirAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExcluirCurso.resx">
+      <DependentUpon>UCExcluirCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExcluirProfessor.resx">
+      <DependentUpon>UCExcluirProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExcluirTurma.resx">
+      <DependentUpon>UCExcluirTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLancarNotas.resx">
+      <DependentUpon>UCLancarNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPesquisar.resx">
+      <DependentUpon>UCPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPesquisarAluno.resx">
+      <DependentUpon>UCPesquisarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPesquisarCurso.resx">
+      <DependentUpon>UCPesquisarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPesquisarProfessor.resx">
+      <DependentUpon>UCPesquisarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPesquisarTurma.resx">
+      <DependentUpon>UCPesquisarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProfessor.resx">
+      <DependentUpon>UCProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCVerNotas.resx">
+      <DependentUpon>UCVerNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisa-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alterar-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homee-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aluno-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\professor-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turma-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turma-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userr-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livro-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Classes\Classes.csproj">
+      <Project>{e21a1412-2939-430f-936c-a2a7a4f33169}</Project>
+      <Name>Classes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

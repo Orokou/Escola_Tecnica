@@ -1,0 +1,30 @@
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\bin\Debug\Classes.dll
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\bin\Debug\Classes.pdb
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\bin\Debug\MySql.Data.dll
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\obj\Debug\Classes.csproj.CopyComplete
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\obj\Debug\Classes.dll
+C:\Users\Érick\Desktop\Escola_Técnica - Cópia\Classes\obj\Debug\Classes.pdb
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\bin\Debug\Classes.dll
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\bin\Debug\Classes.pdb
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\bin\Debug\MySql.Data.dll
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\obj\Debug\Classes.csproj.CopyComplete
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\obj\Debug\Classes.dll
+C:\Users\Érick\Desktop\VisualStudio\Escola Técnica\Classes\obj\Debug\Classes.pdb
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\bin\Debug\Classes.dll
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\bin\Debug\Classes.pdb
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\obj\Debug\Classes.dll
+C:\Users\Aluno\Desktop\Escola Técnica\Classes\obj\Debug\Classes.pdb
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\bin\Debug\Classes.dll
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\bin\Debug\Classes.pdb
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\bin\Debug\MySql.Data.dll
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\obj\Debug\Classes.csproj.CopyComplete
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\obj\Debug\Classes.dll
+C:\Users\Érick\Desktop\Escola Técnica2\Classes\obj\Debug\Classes.pdb
